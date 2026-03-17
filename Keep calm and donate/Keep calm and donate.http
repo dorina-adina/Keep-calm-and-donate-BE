@@ -1,0 +1,6 @@
+@Keep_calm_and_donate_HostAddress = http://localhost:5003
+
+GET {{Keep_calm_and_donate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
