@@ -1,5 +1,4 @@
-﻿using Data_Access_layer.Repos;
-using Db_layer.DbContexts;
+﻿using Db_layer.DbContexts;
 using DB_layer.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussines_layer.Repos
+namespace Data_access_layer.Repos
 {
     public class Donors_Repo : IDonors_Repo
     {

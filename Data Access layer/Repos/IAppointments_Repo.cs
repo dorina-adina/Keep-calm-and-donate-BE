@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Data_access_layer.Repos
 {
-    public interface IDonors_Repo
-    {
-        Task<IEnumerable<Donor>> getDonors();
-
-        Task<Donor> getDonorById(int idDonor);
+    public interface IAppointments_Repo
+    {      
+       Task<IEnumerable<Appointment>> getAppointments();
+       Task<Appointment> AddAppointment(Appointment appointment);
     }
 }

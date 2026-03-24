@@ -1,8 +1,6 @@
-using Bussines_layer.Repos;
-using Data_Access_layer.Repos;
+using Data_access_layer.Repos;
 using Db_layer.DbContexts;
 using Microsoft.EntityFrameworkCore;
-using Presentation_layer.Controllers;
 using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IDonors_Repo, Donors_Repo>();
+builder.Services.AddScoped<IAppointments_Repo, Appointments_Repo>();
 
 builder.Services.AddCors(options =>
 {
